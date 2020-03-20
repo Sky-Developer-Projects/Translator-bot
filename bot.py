@@ -3,8 +3,8 @@ import requests
 
 
 URL = "https://translate.yandex.net/api/v1.5/tr.json/translate"
-KEY = "trnsl.1.1.20200111T163758Z.c2902bb87052f356.b154c54dee4bc65e0c35b84a38c3d046e5368534"
-TOKEN = "1032944998:AAEbvmvSYW53k8rNQBgSxvOwozWloqZ5rfE"
+KEY = ""
+TOKEN = ""
 
 bot = telebot.TeleBot(TOKEN)
 
