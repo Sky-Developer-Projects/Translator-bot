@@ -10,7 +10,6 @@ greenlet==0.4.15
 idna==2.8
 parse==1.14.0
 Pygments==2.4.2
-pypiwin32==223
 PySocks==1.7.1
 pyTelegramBotAPI==3.6.7
 python-dateutil==2.8.1
