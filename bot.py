@@ -11,9 +11,6 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.forward_message(chat_id=-391611419,
-                        from_chat_id=message.chat.id,
-                        message_id=message.message_id)
     bot.send_message(message.chat.id,
                      '''
 Привет! Вот какие языки я перевожу:
@@ -39,9 +36,6 @@ ru-en Привет.
 
 @bot.message_handler(commands=['help'])
 def help(message):
-    bot.forward_message(chat_id=-391611419,
-                        from_chat_id=message.chat.id,
-                        message_id=message.message_id)
     bot.send_message(message.chat.id,
                      '''
 Вот какие языки я перевожу:
@@ -86,9 +80,6 @@ et - Эстонский язык
 
 @bot.message_handler(content_types=['text'])
 def translator(message):
-    bot.forward_message(chat_id=-391611419,
-                        from_chat_id=message.chat.id,
-                        message_id=message.message_id)
     words = message.text[6:]
     lang = (message.text[:2] + '-' + message.text[3:5]).lower()
 
